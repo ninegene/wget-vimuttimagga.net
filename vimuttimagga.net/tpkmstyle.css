@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+#header {
+    position: fixed;
+    background-color: gainsboro;
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+.nav {
+    float: right;
+    font-family: 'Zawgyi-One';
+    text-transform: uppercase;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    float: left;
+    list-style-type: none;
+    border: 1px solid #eee;
+}
+
+.nav ul li a {
+    background-color:darkgrey;
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+#branding {
+    width: 280px;
+    height: 80px;
+    float: left;
+    background: url('img/tpkmlogo.gif') no-repeat center center;
+    background-size: 280px;
+}
+
+#minimenu {
+    display: none;
+    float: right;
+    margin-right: 20px;
+    font-size: 36px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.section:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.section {
+    min-height: 800px;
+    padding-top: 80px;
+    overflow: hidden;
+    /*position: relative;*/
+    font-family: 'Zawgyi-One', sans-serif;
+}
+
+.section article {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8)
+}
+
+#home {
+    background: url('img/bg.jpg') no-repeat;
+    background-size: cover;
+}
+
+#suttanta {
+    background: url('img/bg1.jpg') no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width:680px) {
+    #home {
+        background-color: whitesmoke;
+    }
+    #minimenu {
+        display: block !important;
+        float: right;
+    }
+    .nav {
+        display: none;
+        width: 100%;
+    }
+    .nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:640px) {
+    #home {
+        background-color: snow;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #home {
+        background-color: antiquewhite;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: darkcyan;
+}
+
+#alink {
+    color:aliceblue;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+    opacity: 0.9;
+}
+
+.tpkmbtn {
+	-moz-box-shadow: 3px 4px 0px 0px #899599;
+	-webkit-box-shadow: 3px 4px 0px 0px #899599;
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #bab1ba));
+	background:-moz-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-webkit-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-o-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-ms-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#bab1ba',GradientType=0);
+	background-color:#ededed;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:19px;
+	font-weight:bold;
+	padding:8px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.tpkmbtn:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab1ba), color-stop(1, #ededed));
+	background:-moz-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-webkit-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-o-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-ms-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bab1ba', endColorstr='#ededed',GradientType=0);
+	background-color:#bab1ba;
+}
+.tpkmbtn:active {
+	position:relative;
+	top:1px;
+}
